@@ -22,7 +22,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 ᴏᴜʀ ᴏғғɪᴄɪᴀʟ (TDM) 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 Aᴅᴍɪɴ's 𝚋𝚘𝚝. Fᴏʀ 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 ᴋɪɴᴅʟʏ ᴜsᴇ ᴛʜɪs Fʀᴇᴇ Bᴏᴛ 🤖👉  @TDM_PUB_Files_Streaming_bot 🥰.\n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 ᴏᴜʀ ᴏғғɪᴄɪᴀʟ (SMD) 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 Aᴅᴍɪɴ's 𝚋𝚘𝚝. Fᴏʀ 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 ᴋɪɴᴅʟʏ ᴜsᴇ ᴛʜɪs Fʀᴇᴇ Bᴏᴛ 🤖👉  @SMD_F2L_ROBOT 🥰.\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen.Message(filters.text, id=filters.chat(m.chat.id), timeout=90)
             if _text.text:
                 textp = _text.text
@@ -88,7 +88,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [TDM Admin](https://t.me/Sagastae)",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [🦋𝐒𝐌𝐃_𝐎𝐰𝐧𝐞𝐫🍁](https://t.me/SMD_Owner)",
                 
                 disable_web_page_preview=True)
             return
@@ -104,8 +104,8 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM 🖥", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('DOWNLOAD 📥', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🦋 𝐒𝐭𝐫𝐞𝐚𝐦 𝐋𝐢𝐧𝐤 🖥", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('🦋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 📥', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -142,8 +142,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🖥STREAM ", url=stream_link),
-                     InlineKeyboardButton('Dᴏᴡɴʟᴏᴀᴅ📥', url=online_link)] 
+                    [InlineKeyboardButton("🦋 𝐒𝐭𝐫𝐞𝐚𝐦 𝐋𝐢𝐧𝐤 🖥", url=stream_link),
+                     InlineKeyboardButton('🦋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 📥', url=online_link)] 
                 ]
             )
         )
