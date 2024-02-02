@@ -22,7 +22,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 async def login_handler(c: Client, m: Message):
     try:
         try:
-            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 ᴏᴜʀ ᴏғғɪᴄɪᴀʟ (TDM) 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 Aᴅᴍɪɴ's 𝚋𝚘𝚝. Fᴏʀ 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 ᴋɪɴᴅʟʏ ᴜsᴇ ᴛʜɪs Fʀᴇᴇ Bᴏᴛ 🤖👉  @TDM_PUB_Files_Streaming_bot 🥰.\n\n(You can use /cancel command to cancel the process)")
+            ag = await m.reply_text("Now send me password.\n\n𝚃𝚑𝚒𝚜 𝚒𝚜 ᴏᴜʀ ᴏғғɪᴄɪᴀʟ (SMD) 𝚙𝚛𝚒𝚟𝚊𝚝𝚎 Aᴅᴍɪɴ's 𝚋𝚘𝚝. Fᴏʀ 𝙾𝚝𝚑𝚎𝚛 𝚞𝚜𝚎𝚛𝚜 ᴋɪɴᴅʟʏ ᴜsᴇ ᴛʜɪs Fʀᴇᴇ Bᴏᴛ 🤖👉  @SMD_F2L_ROBOT 🥰.\n\n(You can use /cancel command to cancel the process)")
             _text = await c.listen.Message(filters.text, id=filters.chat(m.chat.id), timeout=90)
             if _text.text:
                 textp = _text.text
@@ -65,7 +65,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ [TDM Admin](https://t.me/Sagastae) ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="You are banned!\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ [🦋𝐒𝐌𝐃_𝐎𝐰𝐧𝐞𝐫🍁](https://t.me/SMD_Owner) ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     
                     disable_web_page_preview=True
                 )
@@ -88,7 +88,7 @@ async def private_receive_handler(c: Client, m: Message):
             await m.reply_text(e)
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [TDM Admin](https://t.me/Sagastae)",
+                text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss** [🦋𝐒𝐌𝐃_𝐎𝐰𝐧𝐞𝐫🍁](https://t.me/SMD_Owner)",
                 
                 disable_web_page_preview=True)
             return
@@ -97,15 +97,15 @@ async def private_receive_handler(c: Client, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
-        msg_text ="""<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n\n<b> 🖥WATCH  :</b> <i>{}</i>\n\n<b>🚸 Nᴏᴛᴇ : LINK WON'T EXPIRE TILL I DELETE</b>"""
+        msg_text ="""<i><u>🍁𝐘𝐨𝐮𝐫 𝐋𝐢𝐧𝐤 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝🦋</u></i>\n\n<b>📂 𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞:</b> <i>{}</i>\n\n<b>📦 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞:</b> <i>{}</i>\n\n<b>🦋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 📥:</b> <i>{}</i>\n\n<b>🦋 𝐒𝐭𝐫𝐞𝐚𝐦 𝐋𝐢𝐧𝐤 🖥:</b> <i>{}</i>\n\n<b>🚸 𝐍𝐨𝐭𝐞 : 𝐋𝐈𝐍𝐊 𝐖𝐎𝐍'𝐓 𝐄𝐗𝐏𝐈𝐑𝐄 𝐓𝐈𝐋𝐋 𝐈 𝐃𝐄𝐋𝐄𝐓𝐄</b>"""
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("STREAM 🖥", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('DOWNLOAD 📥', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🦋 𝐒𝐭𝐫𝐞𝐚𝐦 𝐋𝐢𝐧𝐤 🖥", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('🦋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 📥', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -142,8 +142,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🖥STREAM ", url=stream_link),
-                     InlineKeyboardButton('Dᴏᴡɴʟᴏᴀᴅ📥', url=online_link)] 
+                    [InlineKeyboardButton("🦋 𝐒𝐭𝐫𝐞𝐚𝐦 𝐋𝐢𝐧𝐤 🖥", url=stream_link),
+                     InlineKeyboardButton('🦋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 📥', url=online_link)] 
                 ]
             )
         )
