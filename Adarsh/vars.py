@@ -24,16 +24,16 @@ class Var(object):
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'SMD_Owner'))
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME'))
+        APP_NAME = str(getenv('APP_NAME', 'smd-link'))
     
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://{}/".format(FQDN)
+        URL = "https://smd-link-vinoth.koyeb.app/".format(FQDN)
     else:
-        URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://smdfiletolink:smdfiletolink10@cluster0.ta94doi.mongodb.net/?retryWrites=true&w=majority'))
+        URL = "https://smd-link-vinoth.koyeb.app/".format(FQDN)
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://hillsking1222:kuraman1@kumaran1.d6ahc05.mongodb.net/?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'SAM_DUB_LEZHa'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
