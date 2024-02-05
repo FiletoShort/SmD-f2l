@@ -56,11 +56,11 @@ async def start(b, m):
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
                 photo="https://graph.org/file/4b8bf6ec079dbe5aac0cf.jpg",
-                caption="<i>𝙹𝙾𝙸𝙽 𝚃𝙷𝙸𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴🔐</i>",
+                caption="<i>🍁𝐉𝐨𝐢𝐧 𝐓𝐡𝐢𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐨 𝐔𝐬𝐞 𝐌𝐞⚓</i>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🔓", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("𝐉𝐨𝐢𝐧 𝐍𝐨𝐰🕸", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -108,7 +108,7 @@ async def help_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🤖𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥🍁", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -128,8 +128,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ DEV", url="https://t.me/SMD_Owner")],
-                [InlineKeyboardButton("💥 Source Code", url="https://t.me/SMD_BOTz")]
+                [InlineKeyboardButton("🦋𝐀𝐮𝐭𝐡𝐨𝐫🍁", url="https://t.me/SMD_Owner")],
+                [InlineKeyboardButton("🕸𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞☠️", url="https://t.me/SMD_BOTz")]
             ]
         )
     )
